@@ -7,13 +7,13 @@
                 <div class="col-md-6">
         
                 <div *ngFor='let quote of quotes;let i = index'> <div>
-                  <p> {{quote.name}} </p> <br>
+                  <p> {{quote.name}} </p>
               <button (click)='toggleDetails(i)'>Toggle Details</button>
              
              
              
               <div *ngIf='quote.showDescription'>
-                <app-quote-detail  [quote]='quote' (isComplete) = 'deleteGoal($event,i)'></app-quote-detail>
+                <app-quote-detail  [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-detail>
               </div>
       </div>
     </div>

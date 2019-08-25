@@ -8,8 +8,8 @@
  <p>
      Posted :{{quote.newDate|dateCount}} Days Ago 
  </p>
- <button (click)="upVote"><i class="fa fa-thumbs-up" style="font-size: 24px">{{likes}}</i></button>
- <button (click)="downVote"><i class="fa fa-thumbs-down" style="font-size: 24px">{{dislikes}}</i></button>
+ <button (click)="upVote()"><i class="fa fa-thumbs-up" style="font-size: 18px">{{likes}}</i></button>
+ <button (click)="downVote()"><i class="fa fa-thumbs-down" style="font-size: 18px">{{dislikes}}</i></button>
 
 
 
@@ -17,5 +17,5 @@
 
 
 
- <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+<br><br> <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 
