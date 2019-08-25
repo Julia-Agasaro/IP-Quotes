@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <p>
  Author's Name: {{quote.author}}</p>
 <p>
@@ -5,7 +6,16 @@
  <p>  
     Posted on {{quote.completeDate|date}}</p>
  <p>
-     Posted on:{{quote.newDate|dateCount}} 
+     Posted :{{quote.newDate|dateCount}} Days Ago 
  </p>
+ <button (click)="upVote"><i class="fa fa-thumbs-up" style="font-size: 24px">{{likes}}</i></button>
+ <button (click)="downVote"><i class="fa fa-thumbs-down" style="font-size: 24px">{{dislikes}}</i></button>
+
+
+
+
+
+
+
  <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
 
