@@ -6,7 +6,7 @@
  <p>  
     Posted on: {{quote.completeDate|date}}</p>
  <p>
-     Posted :{{quote.newDate|dateCount}} Days Ago 
+     Posted :{{quote.completeDate|dateCount}} Days Ago 
  </p>
  <button (click)="upVote()"><i class="fa fa-thumbs-up" style="font-size: 18px">{{likes}}</i></button>
  <button (click)="downVote()"><i class="fa fa-thumbs-down" style="font-size: 18px">{{dislikes}}</i></button>
